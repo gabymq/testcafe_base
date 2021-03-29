@@ -10,5 +10,8 @@
   "files.trimTrailingWhitespace": true,
   "typescript.referencesCodeLens.enabled": true,
   "typescript.tsdk": "node_modules\\typrescript\\lib",
-  "cSpell.ignoreWords": ["parens"]
+  "cSpell.ignoreWords": [
+    "linebreak",
+    "parens"
+]
 }

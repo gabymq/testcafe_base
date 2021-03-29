@@ -4,7 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "testcafe chrome:headless ./e2e/test/**/*.spec.ts",
+    "e2e:chrome": "testcafe chrome ./e2e/test/**/*.spec.ts",
+    "e2e:firefox": "testcafe firefox ./e2e/test/**/*.spec.ts",
+    "e2e:edge": "testcafe edge ./e2e/test/**/*.spec.ts",
+    "e2e:ie": "testcafe ie ./e2e/test/**/*.spec.ts",
+    "multi-browser:parallel": "run-p -l e2e:**",
+    "multi-browser:sync": "run-s -l e2e:**"
   },
   "keywords": [],
   "author": "",
